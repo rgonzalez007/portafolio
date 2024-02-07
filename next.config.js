@@ -34,7 +34,7 @@ const nextConfig = {
       },
     ],
   },
-  basePath: '/rgonzalez007/rgonzalez007.github.io-main/',
+  basePath: '/rgonzalez007/rgonzalez007.github.io-main',
 };
 
 module.exports = nextConfig;

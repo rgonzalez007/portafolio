@@ -2,7 +2,7 @@
   "name": "react-resume-template",
   "version": "2.0.0",
   "private": true,
-  "homepage":"https://rgonzalez007.github.io/rgonzalez007.github.io-main/",
+  "homepage":"https://rgonzalez007.github.io/rgonzalez007.github.io-main",
   "scripts": {
     "build": "yarn compile && yarn next build",
     "clean": "rm -rf build-tsc .next",
