@@ -2,6 +2,7 @@
 
 import React from 'react';
 
+// eslint-disable-next-line react-memo/require-memo
 const WhatsAppButton = () => {
   return (
     <>
@@ -52,12 +53,12 @@ const WhatsAppButton = () => {
         }
       `}</style>
       <a
-        id="app-whatsapp"
         className="appWhatsapp"
-        target="_blank"
         href="https://api.whatsapp.com/send?phone=525523276806&amp;text=Hello! I would like contact with you "
+        id="app-whatsapp"
+        target="_blank"
       >
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/640px-WhatsApp.svg.png" alt="Whatsapp" />
+        <img alt="Whatsapp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/640px-WhatsApp.svg.png" />
         <i className="fab fa-whatsapp"></i>
       </a>
     </>

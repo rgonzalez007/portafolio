@@ -1,7 +1,7 @@
 
-import WhatsAppButton from '../../WhatsAppButton/WhatsAppButton';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
-import { FC, memo, useCallback, useMemo, useState } from 'react';
+import WhatsAppButton from '../../WhatsAppButton/WhatsAppButton';
 
 interface FormData {
   name: string;
@@ -15,7 +15,7 @@ const ContactForm: FC = memo(() => {
       name: '',
       email: '',
       message: '',
-    }),
+  }),
     [],
   );
 
@@ -23,12 +23,12 @@ const ContactForm: FC = memo(() => {
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
-      const { name, value } = event.target;
+      const {name, value} = event.target;
 
-      const fieldData: Partial<FormData> = { [name]: value };
+      const fieldData: Partial<FormData> = {[name]: value};
 
-      setData({ ...data, ...fieldData });
-    },
+      setData({...data, ...fieldData});
+  },
     [data],
   );
 
@@ -39,7 +39,7 @@ const ContactForm: FC = memo(() => {
        * This is a good starting point to wire up your form submission logic
        * */
       console.log('Data to send: ', data);
-    },
+  },
     [data],
   );
 

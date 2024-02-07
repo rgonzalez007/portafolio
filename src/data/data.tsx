@@ -11,14 +11,11 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
-
-
-import audits from '../images/audits.jpg';
 import alcor from '../images/alcor.jpg';
+import audits from '../images/audits.jpg';
 import euritium from '../images/euritium.jpg';
+import heroImage from '../images/header-background.webp';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -85,12 +82,12 @@ export const heroData: Hero = {
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-    },
+},
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
       primary: false,
-    },
+},
   ],
 };
 
@@ -102,12 +99,12 @@ export const aboutData: About = {
   description: `A Food Chemistry  with passion dedicated to improve the food industry trought the software development. 
   I encourage myself every day to achieve my personal goals through discipline.`,
   aboutItems: [
-    { label: 'Location', text: 'Texcoco, Mexico', Icon: MapIcon },
-    { label: 'Age', text: '35', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Mexican', Icon: FlagIcon },
-    { label: 'Interests', text: 'Mountain biking, hiking', Icon: SparklesIcon },
-    { label: 'Study', text: 'UNAM, ISU', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Several', Icon: BuildingOffice2Icon },
+    {label: 'Location', text: 'Texcoco, Mexico', Icon: MapIcon},
+    {label: 'Age', text: '35', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Mexican', Icon: FlagIcon},
+    {label: 'Interests', text: 'Mountain biking, hiking', Icon: SparklesIcon},
+    {label: 'Study', text: 'UNAM, ISU', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Several', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -121,31 +118,31 @@ export const skills: SkillGroup[] = [
       {
         name: 'English',
         level: 10,
-      }
+}
     ],
-  },
+},
   {
     name: 'Full Stack',
     skills: [
       {
         name: 'Nextjs',
         level: 10,
-      },
+},
       {
         name: 'React',
         level: 9,
-      }, {
+}, {
         name: 'Node.js',
         level: 8,
-      },
+},
 
       {
         name: 'Mysql',
         level: 10,
-      },
+},
 
     ],
-  },
+},
 
 
 ];
@@ -159,19 +156,19 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'A complete develop, an app with the pursuit of managment of audits a colaborative project between users.',
     url: 'https://www.youtube.com/channel/UCFuiDZrY-zwMsI9M89NChzA',
     image: audits,
-  },
+},
   {
     title: 'Full Stack - Publications',
     description: 'Administration of publication of properties in sale. Confidential info',
     url: '',
     image: alcor,
-  },
+},
   {
     title: 'Euritium pages',
     description: 'Project focused on resolving some of the communication and technical issues in the food industry. This is an old project, and over time, I will share some information using Next.js.',
     url: 'https://www.youtube.com/channel/UCFuiDZrY-zwMsI9M89NChzA',
     image: euritium,
-  },
+},
 
 ];
 
@@ -184,25 +181,25 @@ export const education: TimelineItem[] = [
     location: 'Mexico ISU',
     title: 'Data Science - Master degree',
     content: <p> To propose data models that allow their real application and guarantee successful insertion in productive environments</p>,
-  },
+},
   {
     date: 'April 2021',
     location: 'Mexico FUNVAL',
     title: 'English Seminary',
     content: <p></p>,
-  },
+},
   {
     date: 'April 2014',
     location: 'Mexico UNAM',
     title: 'Safety management auditor',
     content: <p>Safety management auditor.</p>,
-  },
+},
   {
     date: 'March 2003',
     location: 'Mexico UNAM',
     title: 'Food Chemistry - Bachelor degree',
     content: <p>The basics to learn about the scientific method and their aproach in the food industry.</p>,
-  },
+},
 ];
 
 export const experience: TimelineItem[] = [
@@ -215,7 +212,7 @@ export const experience: TimelineItem[] = [
         Administration of publication of properties in sale. Confidential Info.
       </p>
     ),
-  },
+},
   {
     date: 'March 2013 - February 2020',
     location: 'Alsea',
@@ -225,7 +222,7 @@ export const experience: TimelineItem[] = [
         Experience in mapping and standardization of processes, knowledge of logistics in the supply chain.
       </p>
     ),
-  },
+},
 ];
 
 /**
@@ -238,17 +235,17 @@ export const testimonial: TestimonialSection = {
       name: 'John Doe',
       text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
+},
     {
       name: 'Jane Doe',
       text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
+},
     {
       name: 'Someone else',
       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
+},
   ],
 };
 
@@ -264,22 +261,22 @@ export const contact: ContactSection = {
       type: ContactType.Email,
       text: 'rgnewage007@gmail.com',
       href: 'mailto:rgnewage007@gmail.com',
-    },
+},
     {
       type: ContactType.Location,
       text: 'Texcoco, Mexico',
       href: 'https://maps.app.goo.gl/brUxenm9KfVhTkJj8',
-    },
+},
     {
       type: ContactType.Instagram,
       text: '@rgmosqueda',
       href: 'https://www.instagram.com/rgmosqueda/',
-    },
+},
     {
       type: ContactType.Github,
       text: 'rgonzalez007',
       href: 'https://github.com/rgonzalez007',
-    },
+},
   ],
 };
 
@@ -287,9 +284,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/rgonzalez007' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/rgonzalez007'},
 
-  //{ label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/raulmosk-27b2a662/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/rgmosqueda/' },
-  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/EAuwolf64137' },
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/raulmosk-27b2a662/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/rgmosqueda/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/EAuwolf64137'},
 ];
