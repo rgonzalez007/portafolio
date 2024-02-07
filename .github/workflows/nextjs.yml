@@ -74,7 +74,11 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: |
+          # Configuración de NEXT_PUBLIC_BASE_PATH antes de la construcción
+          echo "NEXT_PUBLIC_BASE_PATH='/rgonzalez007/rgonzalez007.github.io-main'" >> .env
+          ${{ steps.detect-package-manager.outputs.runner }} next build
+          ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
