@@ -29,17 +29,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
-    - name: Build with Next.js
-    run: |
-          echo "NEXT_PUBLIC_BASE_PATH='/rgonzalez007/rgonzalez007.github.io-main'" >> .env
-          ${{ steps.detect-package-manager.outputs.runner }} next build
-          ${{ steps.detect-package-manager.outputs.runner }} next export
-          
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
