@@ -34,7 +34,7 @@ const nextConfig = {
       },
     ],
   },
-// basePath: '/',
+  exportTrailingSlash: true,
 };
 
 module.exports = nextConfig;
